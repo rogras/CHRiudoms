@@ -7,52 +7,63 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DB16BECF1A095CDF00BF100B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DB16BECE1A095CDF00BF100B /* main.m */; };
-		DB16BED21A095CDF00BF100B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DB16BED11A095CDF00BF100B /* AppDelegate.m */; };
-		DB16BED51A095CDF00BF100B /* chriudoms.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DB16BED31A095CDF00BF100B /* chriudoms.xcdatamodeld */; };
-		DB16BED81A095CDF00BF100B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB16BED71A095CDF00BF100B /* ViewController.m */; };
-		DB16BEDB1A095CDF00BF100B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB16BED91A095CDF00BF100B /* Main.storyboard */; };
-		DB16BEDD1A095CDF00BF100B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB16BEDC1A095CDF00BF100B /* Images.xcassets */; };
-		DB16BEE01A095CDF00BF100B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB16BEDE1A095CDF00BF100B /* LaunchScreen.xib */; };
-		DB16BEEC1A095CDF00BF100B /* chriudomsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB16BEEB1A095CDF00BF100B /* chriudomsTests.m */; };
+		5EE51E653FC809AA8350D9DC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 29934039A758AD9160419641 /* libPods.a */; };
+		DB16BF041A095D0600BF100B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DB16BF031A095D0600BF100B /* main.m */; };
+		DB16BF071A095D0600BF100B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DB16BF061A095D0600BF100B /* AppDelegate.m */; };
+		DB16BF0A1A095D0600BF100B /* CHRiudoms.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DB16BF081A095D0600BF100B /* CHRiudoms.xcdatamodeld */; };
+		DB16BF0D1A095D0600BF100B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB16BF0C1A095D0600BF100B /* ViewController.m */; };
+		DB16BF121A095D0600BF100B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB16BF111A095D0600BF100B /* Images.xcassets */; };
+		DB16BF151A095D0600BF100B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB16BF131A095D0600BF100B /* LaunchScreen.xib */; };
+		DB16BF211A095D0600BF100B /* CHRiudomsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB16BF201A095D0600BF100B /* CHRiudomsTests.m */; };
+		DB16BF2E1A095FA400BF100B /* ParseUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = DB16BF2D1A095FA400BF100B /* ParseUtilities.m */; };
+		DB16BF331A09659500BF100B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB16BF321A09659500BF100B /* Main.storyboard */; };
+		DB16BF371A0965F200BF100B /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB16BF361A0965F200BF100B /* LoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		DB16BEE61A095CDF00BF100B /* PBXContainerItemProxy */ = {
+		DB16BF1B1A095D0600BF100B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = DB16BEC11A095CDF00BF100B /* Project object */;
+			containerPortal = DB16BEF61A095D0600BF100B /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DB16BEC81A095CDF00BF100B;
-			remoteInfo = chriudoms;
+			remoteGlobalIDString = DB16BEFD1A095D0600BF100B;
+			remoteInfo = CHRiudoms;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DB16BEC91A095CDF00BF100B /* chriudoms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chriudoms.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DB16BECD1A095CDF00BF100B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DB16BECE1A095CDF00BF100B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		DB16BED01A095CDF00BF100B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		DB16BED11A095CDF00BF100B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		DB16BED41A095CDF00BF100B /* chriudoms.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = chriudoms.xcdatamodel; sourceTree = "<group>"; };
-		DB16BED61A095CDF00BF100B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		DB16BED71A095CDF00BF100B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		DB16BEDA1A095CDF00BF100B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DB16BEDC1A095CDF00BF100B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		DB16BEDF1A095CDF00BF100B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		DB16BEE51A095CDF00BF100B /* chriudomsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = chriudomsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DB16BEEA1A095CDF00BF100B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DB16BEEB1A095CDF00BF100B /* chriudomsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = chriudomsTests.m; sourceTree = "<group>"; };
+		29934039A758AD9160419641 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D67A21F76BCB13DE81432F9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		8FBA261A9FB42E310E1D03AF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		DB16BEFE1A095D0600BF100B /* CHRiudoms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CHRiudoms.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB16BF021A095D0600BF100B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB16BF031A095D0600BF100B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DB16BF051A095D0600BF100B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DB16BF061A095D0600BF100B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DB16BF091A095D0600BF100B /* CHRiudoms.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CHRiudoms.xcdatamodel; sourceTree = "<group>"; };
+		DB16BF0B1A095D0600BF100B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DB16BF0C1A095D0600BF100B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DB16BF111A095D0600BF100B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DB16BF141A095D0600BF100B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		DB16BF1A1A095D0600BF100B /* CHRiudomsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CHRiudomsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB16BF1F1A095D0600BF100B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB16BF201A095D0600BF100B /* CHRiudomsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHRiudomsTests.m; sourceTree = "<group>"; };
+		DB16BF2D1A095FA400BF100B /* ParseUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseUtilities.m; sourceTree = "<group>"; };
+		DB16BF2F1A095FB500BF100B /* ParseUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ParseUtilities.h; sourceTree = "<group>"; };
+		DB16BF321A09659500BF100B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		DB16BF351A0965F200BF100B /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		DB16BF361A0965F200BF100B /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		DB16BEC61A095CDF00BF100B /* Frameworks */ = {
+		DB16BEFB1A095D0600BF100B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EE51E653FC809AA8350D9DC /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DB16BEE21A095CDF00BF100B /* Frameworks */ = {
+		DB16BF171A095D0600BF100B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -62,123 +73,172 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DB16BEC01A095CDF00BF100B = {
+		3324CD58DB7495AA8709FDEF /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				DB16BECB1A095CDF00BF100B /* chriudoms */,
-				DB16BEE81A095CDF00BF100B /* chriudomsTests */,
-				DB16BECA1A095CDF00BF100B /* Products */,
+				2D67A21F76BCB13DE81432F9 /* Pods.debug.xcconfig */,
+				8FBA261A9FB42E310E1D03AF /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DB16BEF51A095D0600BF100B = {
+			isa = PBXGroup;
+			children = (
+				DB16BF001A095D0600BF100B /* CHRiudoms */,
+				DB16BF1D1A095D0600BF100B /* CHRiudomsTests */,
+				DB16BEFF1A095D0600BF100B /* Products */,
+				3324CD58DB7495AA8709FDEF /* Pods */,
+				DBD1E42227B490D10C5AA357 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		DB16BECA1A095CDF00BF100B /* Products */ = {
+		DB16BEFF1A095D0600BF100B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DB16BEC91A095CDF00BF100B /* chriudoms.app */,
-				DB16BEE51A095CDF00BF100B /* chriudomsTests.xctest */,
+				DB16BEFE1A095D0600BF100B /* CHRiudoms.app */,
+				DB16BF1A1A095D0600BF100B /* CHRiudomsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DB16BECB1A095CDF00BF100B /* chriudoms */ = {
+		DB16BF001A095D0600BF100B /* CHRiudoms */ = {
 			isa = PBXGroup;
 			children = (
-				DB16BED01A095CDF00BF100B /* AppDelegate.h */,
-				DB16BED11A095CDF00BF100B /* AppDelegate.m */,
-				DB16BED61A095CDF00BF100B /* ViewController.h */,
-				DB16BED71A095CDF00BF100B /* ViewController.m */,
-				DB16BED91A095CDF00BF100B /* Main.storyboard */,
-				DB16BEDC1A095CDF00BF100B /* Images.xcassets */,
-				DB16BEDE1A095CDF00BF100B /* LaunchScreen.xib */,
-				DB16BED31A095CDF00BF100B /* chriudoms.xcdatamodeld */,
-				DB16BECC1A095CDF00BF100B /* Supporting Files */,
+				DB16BF341A0965D400BF100B /* Login */,
+				DB16BF311A09658300BF100B /* Storyboard */,
+				DB16BF2C1A095F8200BF100B /* Config */,
+				DB16BF051A095D0600BF100B /* AppDelegate.h */,
+				DB16BF061A095D0600BF100B /* AppDelegate.m */,
+				DB16BF0B1A095D0600BF100B /* ViewController.h */,
+				DB16BF0C1A095D0600BF100B /* ViewController.m */,
+				DB16BF111A095D0600BF100B /* Images.xcassets */,
+				DB16BF131A095D0600BF100B /* LaunchScreen.xib */,
+				DB16BF081A095D0600BF100B /* CHRiudoms.xcdatamodeld */,
+				DB16BF011A095D0600BF100B /* Supporting Files */,
 			);
-			path = chriudoms;
+			path = CHRiudoms;
 			sourceTree = "<group>";
 		};
-		DB16BECC1A095CDF00BF100B /* Supporting Files */ = {
+		DB16BF011A095D0600BF100B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				DB16BECD1A095CDF00BF100B /* Info.plist */,
-				DB16BECE1A095CDF00BF100B /* main.m */,
+				DB16BF021A095D0600BF100B /* Info.plist */,
+				DB16BF031A095D0600BF100B /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		DB16BEE81A095CDF00BF100B /* chriudomsTests */ = {
+		DB16BF1D1A095D0600BF100B /* CHRiudomsTests */ = {
 			isa = PBXGroup;
 			children = (
-				DB16BEEB1A095CDF00BF100B /* chriudomsTests.m */,
-				DB16BEE91A095CDF00BF100B /* Supporting Files */,
+				DB16BF201A095D0600BF100B /* CHRiudomsTests.m */,
+				DB16BF1E1A095D0600BF100B /* Supporting Files */,
 			);
-			path = chriudomsTests;
+			path = CHRiudomsTests;
 			sourceTree = "<group>";
 		};
-		DB16BEE91A095CDF00BF100B /* Supporting Files */ = {
+		DB16BF1E1A095D0600BF100B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				DB16BEEA1A095CDF00BF100B /* Info.plist */,
+				DB16BF1F1A095D0600BF100B /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DB16BF2C1A095F8200BF100B /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				DB16BF2F1A095FB500BF100B /* ParseUtilities.h */,
+				DB16BF2D1A095FA400BF100B /* ParseUtilities.m */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		DB16BF311A09658300BF100B /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				DB16BF321A09659500BF100B /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		DB16BF341A0965D400BF100B /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				DB16BF351A0965F200BF100B /* LoginViewController.h */,
+				DB16BF361A0965F200BF100B /* LoginViewController.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		DBD1E42227B490D10C5AA357 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29934039A758AD9160419641 /* libPods.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DB16BEC81A095CDF00BF100B /* chriudoms */ = {
+		DB16BEFD1A095D0600BF100B /* CHRiudoms */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DB16BEEF1A095CDF00BF100B /* Build configuration list for PBXNativeTarget "chriudoms" */;
+			buildConfigurationList = DB16BF241A095D0600BF100B /* Build configuration list for PBXNativeTarget "CHRiudoms" */;
 			buildPhases = (
-				DB16BEC51A095CDF00BF100B /* Sources */,
-				DB16BEC61A095CDF00BF100B /* Frameworks */,
-				DB16BEC71A095CDF00BF100B /* Resources */,
+				933B9756EB6256F4FB4A1E48 /* Check Pods Manifest.lock */,
+				DB16BEFA1A095D0600BF100B /* Sources */,
+				DB16BEFB1A095D0600BF100B /* Frameworks */,
+				DB16BEFC1A095D0600BF100B /* Resources */,
+				3439EA7319088BD6AAA50A47 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = chriudoms;
-			productName = chriudoms;
-			productReference = DB16BEC91A095CDF00BF100B /* chriudoms.app */;
+			name = CHRiudoms;
+			productName = CHRiudoms;
+			productReference = DB16BEFE1A095D0600BF100B /* CHRiudoms.app */;
 			productType = "com.apple.product-type.application";
 		};
-		DB16BEE41A095CDF00BF100B /* chriudomsTests */ = {
+		DB16BF191A095D0600BF100B /* CHRiudomsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DB16BEF21A095CDF00BF100B /* Build configuration list for PBXNativeTarget "chriudomsTests" */;
+			buildConfigurationList = DB16BF271A095D0600BF100B /* Build configuration list for PBXNativeTarget "CHRiudomsTests" */;
 			buildPhases = (
-				DB16BEE11A095CDF00BF100B /* Sources */,
-				DB16BEE21A095CDF00BF100B /* Frameworks */,
-				DB16BEE31A095CDF00BF100B /* Resources */,
+				DB16BF161A095D0600BF100B /* Sources */,
+				DB16BF171A095D0600BF100B /* Frameworks */,
+				DB16BF181A095D0600BF100B /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				DB16BEE71A095CDF00BF100B /* PBXTargetDependency */,
+				DB16BF1C1A095D0600BF100B /* PBXTargetDependency */,
 			);
-			name = chriudomsTests;
-			productName = chriudomsTests;
-			productReference = DB16BEE51A095CDF00BF100B /* chriudomsTests.xctest */;
+			name = CHRiudomsTests;
+			productName = CHRiudomsTests;
+			productReference = DB16BF1A1A095D0600BF100B /* CHRiudomsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		DB16BEC11A095CDF00BF100B /* Project object */ = {
+		DB16BEF61A095D0600BF100B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = rogras;
 				TargetAttributes = {
-					DB16BEC81A095CDF00BF100B = {
+					DB16BEFD1A095D0600BF100B = {
 						CreatedOnToolsVersion = 6.1;
 					};
-					DB16BEE41A095CDF00BF100B = {
+					DB16BF191A095D0600BF100B = {
 						CreatedOnToolsVersion = 6.1;
-						TestTargetID = DB16BEC81A095CDF00BF100B;
+						TestTargetID = DB16BEFD1A095D0600BF100B;
 					};
 				};
 			};
-			buildConfigurationList = DB16BEC41A095CDF00BF100B /* Build configuration list for PBXProject "chriudoms" */;
+			buildConfigurationList = DB16BEF91A095D0600BF100B /* Build configuration list for PBXProject "CHRiudoms" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -186,29 +246,29 @@
 				en,
 				Base,
 			);
-			mainGroup = DB16BEC01A095CDF00BF100B;
-			productRefGroup = DB16BECA1A095CDF00BF100B /* Products */;
+			mainGroup = DB16BEF51A095D0600BF100B;
+			productRefGroup = DB16BEFF1A095D0600BF100B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DB16BEC81A095CDF00BF100B /* chriudoms */,
-				DB16BEE41A095CDF00BF100B /* chriudomsTests */,
+				DB16BEFD1A095D0600BF100B /* CHRiudoms */,
+				DB16BF191A095D0600BF100B /* CHRiudomsTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		DB16BEC71A095CDF00BF100B /* Resources */ = {
+		DB16BEFC1A095D0600BF100B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB16BEDB1A095CDF00BF100B /* Main.storyboard in Resources */,
-				DB16BEE01A095CDF00BF100B /* LaunchScreen.xib in Resources */,
-				DB16BEDD1A095CDF00BF100B /* Images.xcassets in Resources */,
+				DB16BF151A095D0600BF100B /* LaunchScreen.xib in Resources */,
+				DB16BF121A095D0600BF100B /* Images.xcassets in Resources */,
+				DB16BF331A09659500BF100B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DB16BEE31A095CDF00BF100B /* Resources */ = {
+		DB16BF181A095D0600BF100B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -217,49 +277,76 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3439EA7319088BD6AAA50A47 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		933B9756EB6256F4FB4A1E48 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		DB16BEC51A095CDF00BF100B /* Sources */ = {
+		DB16BEFA1A095D0600BF100B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB16BED21A095CDF00BF100B /* AppDelegate.m in Sources */,
-				DB16BED51A095CDF00BF100B /* chriudoms.xcdatamodeld in Sources */,
-				DB16BED81A095CDF00BF100B /* ViewController.m in Sources */,
-				DB16BECF1A095CDF00BF100B /* main.m in Sources */,
+				DB16BF0A1A095D0600BF100B /* CHRiudoms.xcdatamodeld in Sources */,
+				DB16BF071A095D0600BF100B /* AppDelegate.m in Sources */,
+				DB16BF371A0965F200BF100B /* LoginViewController.m in Sources */,
+				DB16BF0D1A095D0600BF100B /* ViewController.m in Sources */,
+				DB16BF2E1A095FA400BF100B /* ParseUtilities.m in Sources */,
+				DB16BF041A095D0600BF100B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DB16BEE11A095CDF00BF100B /* Sources */ = {
+		DB16BF161A095D0600BF100B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB16BEEC1A095CDF00BF100B /* chriudomsTests.m in Sources */,
+				DB16BF211A095D0600BF100B /* CHRiudomsTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		DB16BEE71A095CDF00BF100B /* PBXTargetDependency */ = {
+		DB16BF1C1A095D0600BF100B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DB16BEC81A095CDF00BF100B /* chriudoms */;
-			targetProxy = DB16BEE61A095CDF00BF100B /* PBXContainerItemProxy */;
+			target = DB16BEFD1A095D0600BF100B /* CHRiudoms */;
+			targetProxy = DB16BF1B1A095D0600BF100B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		DB16BED91A095CDF00BF100B /* Main.storyboard */ = {
+		DB16BF131A095D0600BF100B /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				DB16BEDA1A095CDF00BF100B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		DB16BEDE1A095CDF00BF100B /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DB16BEDF1A095CDF00BF100B /* Base */,
+				DB16BF141A095D0600BF100B /* Base */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -267,7 +354,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		DB16BEED1A095CDF00BF100B /* Debug */ = {
+		DB16BF221A095D0600BF100B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -309,7 +396,7 @@
 			};
 			name = Debug;
 		};
-		DB16BEEE1A095CDF00BF100B /* Release */ = {
+		DB16BF231A095D0600BF100B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -345,27 +432,29 @@
 			};
 			name = Release;
 		};
-		DB16BEF01A095CDF00BF100B /* Debug */ = {
+		DB16BF251A095D0600BF100B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D67A21F76BCB13DE81432F9 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = chriudoms/Info.plist;
+				INFOPLIST_FILE = CHRiudoms/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		DB16BEF11A095CDF00BF100B /* Release */ = {
+		DB16BF261A095D0600BF100B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FBA261A9FB42E310E1D03AF /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = chriudoms/Info.plist;
+				INFOPLIST_FILE = CHRiudoms/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
-		DB16BEF31A095CDF00BF100B /* Debug */ = {
+		DB16BF281A095D0600BF100B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -377,14 +466,14 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = chriudomsTests/Info.plist;
+				INFOPLIST_FILE = CHRiudomsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/chriudoms.app/chriudoms";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CHRiudoms.app/CHRiudoms";
 			};
 			name = Debug;
 		};
-		DB16BEF41A095CDF00BF100B /* Release */ = {
+		DB16BF291A095D0600BF100B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -392,55 +481,57 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = chriudomsTests/Info.plist;
+				INFOPLIST_FILE = CHRiudomsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/chriudoms.app/chriudoms";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CHRiudoms.app/CHRiudoms";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DB16BEC41A095CDF00BF100B /* Build configuration list for PBXProject "chriudoms" */ = {
+		DB16BEF91A095D0600BF100B /* Build configuration list for PBXProject "CHRiudoms" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DB16BEED1A095CDF00BF100B /* Debug */,
-				DB16BEEE1A095CDF00BF100B /* Release */,
+				DB16BF221A095D0600BF100B /* Debug */,
+				DB16BF231A095D0600BF100B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DB16BEEF1A095CDF00BF100B /* Build configuration list for PBXNativeTarget "chriudoms" */ = {
+		DB16BF241A095D0600BF100B /* Build configuration list for PBXNativeTarget "CHRiudoms" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DB16BEF01A095CDF00BF100B /* Debug */,
-				DB16BEF11A095CDF00BF100B /* Release */,
+				DB16BF251A095D0600BF100B /* Debug */,
+				DB16BF261A095D0600BF100B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		DB16BEF21A095CDF00BF100B /* Build configuration list for PBXNativeTarget "chriudomsTests" */ = {
+		DB16BF271A095D0600BF100B /* Build configuration list for PBXNativeTarget "CHRiudomsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DB16BEF31A095CDF00BF100B /* Debug */,
-				DB16BEF41A095CDF00BF100B /* Release */,
+				DB16BF281A095D0600BF100B /* Debug */,
+				DB16BF291A095D0600BF100B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		DB16BED31A095CDF00BF100B /* chriudoms.xcdatamodeld */ = {
+		DB16BF081A095D0600BF100B /* CHRiudoms.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				DB16BED41A095CDF00BF100B /* chriudoms.xcdatamodel */,
+				DB16BF091A095D0600BF100B /* CHRiudoms.xcdatamodel */,
 			);
-			currentVersion = DB16BED41A095CDF00BF100B /* chriudoms.xcdatamodel */;
-			path = chriudoms.xcdatamodeld;
+			currentVersion = DB16BF091A095D0600BF100B /* CHRiudoms.xcdatamodel */;
+			path = CHRiudoms.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
 	};
-	rootObject = DB16BEC11A095CDF00BF100B /* Project object */;
+	rootObject = DB16BEF61A095D0600BF100B /* Project object */;
 }

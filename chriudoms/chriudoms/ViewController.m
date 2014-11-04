@@ -1,12 +1,13 @@
 //
 //  ViewController.m
-//  chriudoms
+//  CHRiudoms
 //
 //  Created by Roger Gras on 4/11/14.
 //  Copyright (c) 2014 rogras. All rights reserved.
 //
 
 #import "ViewController.h"
+#import <Parse.h>
 
 @interface ViewController ()
 
@@ -16,7 +17,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    PFLogInViewController *logInController = [[PFLogInViewController alloc] init];
+    logInController.delegate = self;
+    [self presentModalViewController:logInController animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

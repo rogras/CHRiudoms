@@ -1,6 +1,6 @@
 //
-//  chriudomsTests.m
-//  chriudomsTests
+//  CHRiudomsTests.m
+//  CHRiudomsTests
 //
 //  Created by Roger Gras on 4/11/14.
 //  Copyright (c) 2014 rogras. All rights reserved.
@@ -9,11 +9,11 @@
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
-@interface chriudomsTests : XCTestCase
+@interface CHRiudomsTests : XCTestCase
 
 @end
 
-@implementation chriudomsTests
+@implementation CHRiudomsTests
 
 - (void)setUp {
     [super setUp];

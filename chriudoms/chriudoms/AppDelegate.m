@@ -1,12 +1,16 @@
 //
 //  AppDelegate.m
-//  chriudoms
+//  CHRiudoms
 //
 //  Created by Roger Gras on 4/11/14.
 //  Copyright (c) 2014 rogras. All rights reserved.
 //
 
 #import "AppDelegate.h"
+
+#import <Parse/Parse.h>
+#import "ParseUtilities.h"
+#import <PFFacebookUtils.h>
 
 @interface AppDelegate ()
 
@@ -17,6 +21,131 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [Parse setApplicationId:APPLICATION_ID clientKey:CLIENT_KEY];
+    
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    
+    [PFTwitterUtils initializeWithConsumerKey:@"zxf17fXfcKilTRty9UC8BzMIQ"
+                               consumerSecret:@"31dBio77XMCx9LzuFNEU99MBXG4hlRg6LJMJ2FnXh2XR3sAzlq"];
+    
+    [PFFacebookUtils initializeFacebook];
+    
+    /*
+    PFObject *miPersona = [PFObject objectWithClassName:@"Persona"];
+    [miPersona setObject:@"Miguel" forKey:@"nickname"];
+    
+    // Versión asíncrona
+    [miPersona saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        if (!error) {
+            // La persona se ha grabado correctamente.
+        } else {
+            // Se ha producido un error al guardar la información de la Persona.
+        }
+    }];
+    
+    PFObject *miNota = [PFObject objectWithClassName:@"PersonPush"];
+    [miNota setObject:@"dfdsfdsfdsfdskljhfvlkjdshgklfds" forKey:@"deviceToken"];
+    // Paso como parámetro el objeto persona generado anteriormente.
+    [miNota setObject:miPersona forKey:@"person"];
+    [miNota save];
+    
+    
+    
+    PFQuery *query = [PFQuery queryWithClassName:@"Persona"];
+    
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (!error) {
+            // La búsqueda se ha ejecutado correctamente y el NSArray objects
+            // contiene los resultados de la misma.
+        } else {
+            // Se ha producido un error al ejecutar la búsqueda.
+        }
+    }];
+    
+    PFUser *miUsuario = [PFUser user];
+    miUsuario.username = @"rogras";
+    miUsuario.password = @"Scotland3!";
+    miUsuario.email = @"yo2@me.com";
+    
+    [miUsuario signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        if (!error) {
+            // El alta de usuario se ha realizado correctamente.
+        } else {
+            // Se ha producido un error en el alta de usuario.
+        }
+    }];
+    */
+    
+    [PFUser logOut];
+    
+    PFUser *miUsuario = [PFUser user];
+    miUsuario.username = @"rogras";
+    miUsuario.password = @"Scotland3!";
+    miUsuario.email = @"xeli82@gmail.com";
+    
+    [PFTwitterUtils logInWithBlock:^(PFUser *user, NSError *error) {
+        if (!user) {
+            // El usuario ha cancelado el login mediante Facebook.
+        } else if (user.isNew) {
+            // El usuario se ha creado y logado mediante Facebook.
+        } else {
+            // El usuario ya existía y se ha logado mediante Facebook.
+        }
+    }];
+    
+    [PFFacebookUtils logInWithPermissions:nil block:^(PFUser *user, NSError *error) {//qANLfzK1MJV1IUYWthxDEmNPp
+        if (!user) {
+            NSLog(@"Uh oh. The user cancelled the Facebook login.");
+        } else if (user.isNew) {
+            NSLog(@"User signed up and logged in through Facebook!");
+        } else {
+            NSLog(@"User logged in through Facebook!");
+        }
+    }];
+    
+    /*
+    [PFUser logInWithUsernameInBackground:@"rogras" password:@"Scotland3!"
+                                    block:^(PFUser *user, NSError *error) {
+                                        if (user) {
+                                            // El usuario y contraseña indicados son correctos.
+                                            PFUser *usuarioActual = [PFUser currentUser];
+                                            if (usuarioActual) {
+                                                // Ya hay usuario y por tanto continuamos con el flujo de la app.
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                [PFUser logOut];
+                                            } else {
+                                                // No hay usuario, por lo que mostramos la pantalla de login o alta de usuario.
+                                            }
+                                        } else {
+                                            // El usuario o contraseña NO es correcta.
+                                        }
+                                    }];
+   
+    
+    // Enviar una notificación a todos los dispositivos suscritos al canal Futbol.
+    PFPush *push = [[PFPush alloc] init];
+    [push setChannel:@"Futbol"];
+    [push setMessage:@"Se han publicado novedades en el canal de fútbol!"];
+    [push sendPushInBackground];
+    
+    // Creamos la consulta a la tabla PFInstallation para recuperar aquellos dispositivos que sean iOS
+    PFQuery *pushQuery = [PFInstallation query];
+    [pushQuery whereKey:@"deviceType" equalTo:@"ios"];
+    
+    // Enviamos la notificación a los dispositivos que cumplen la consulta
+    PFPush *push2 = [[PFPush alloc] init];
+    [push2 setQuery:pushQuery];
+    [push2 setMessage:@"¡Como eres usuario de iOS tenemos una sorpresa para tí!"];
+    [push2 sendPushInBackground];
+    */
     return YES;
 }
 
@@ -51,7 +180,7 @@
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
 
 - (NSURL *)applicationDocumentsDirectory {
-    // The directory the application uses to store the Core Data store file. This code uses a directory named "net.rogras.chriudoms" in the application's documents directory.
+    // The directory the application uses to store the Core Data store file. This code uses a directory named "net.rogras.CHRiudoms" in the application's documents directory.
     return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
 }
 
@@ -60,7 +189,7 @@
     if (_managedObjectModel != nil) {
         return _managedObjectModel;
     }
-    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"chriudoms" withExtension:@"momd"];
+    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"CHRiudoms" withExtension:@"momd"];
     _managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
     return _managedObjectModel;
 }
@@ -74,7 +203,7 @@
     // Create the coordinator and store
     
     _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
-    NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"chriudoms.sqlite"];
+    NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"CHRiudoms.sqlite"];
     NSError *error = nil;
     NSString *failureReason = @"There was an error creating or loading the application's saved data.";
     if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:nil error:&error]) {
@@ -124,4 +253,36 @@
     }
 }
 
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
+    return [PFFacebookUtils handleOpenURL:url];
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+    return [PFFacebookUtils handleOpenURL:url];
+}
+
+
+- (void)application:(UIApplication *)application
+didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    
+    // Guardamos el deviceToken en un nuevo registro en la tabla que crea por defecto Parse, y denominada Installation.
+    PFInstallation *currentInstallation = [PFInstallation currentInstallation];
+    [currentInstallation setDeviceTokenFromData:deviceToken];
+    [currentInstallation saveInBackground];
+    
+    // Como el usuario ha indicado que le gusta el fútbol, le incluimos en el canal futbol.
+    [currentInstallation addUniqueObject:@"Futbol" forKey:@"channels"];
+    [currentInstallation saveInBackground];
+    
+    
+    // El usuario nos indica que ya no le gusta el fútbol, y por tanto retiramos su suscripción del canal.
+    [currentInstallation removeObject:@"Futbol" forKey:@"channels"];
+    [currentInstallation saveInBackground];
+    
+}
+
+- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
+    NSLog(@"El usuario no ha aceptado recibir notificaciones push de nuestra app");
+}
 @end

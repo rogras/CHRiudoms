@@ -6,8 +6,5 @@
 //  Copyright (c) 2014 rogras. All rights reserved.
 //
 
-#ifndef CHRiudoms_ParseUtilities_h
-#define CHRiudoms_ParseUtilities_h
-
-
-#endif
+#define APPLICATION_ID 		@"kedYmehXTcguipye4Elt1RUZccgMrildApdQ2xO3"
+#define CLIENT_KEY 		@"auTMVPAP20TumJKKKFssSNMlTOt3lP2ZXRA71so9"
